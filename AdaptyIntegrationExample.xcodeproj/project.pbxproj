@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		42F9D8BD2EC336E4009DA52A /* Adapty in Frameworks */ = {isa = PBXBuildFile; productRef = 42F9D8BC2EC336E4009DA52A /* Adapty */; };
+		42F9D8BF2EC336E4009DA52A /* AdaptyPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 42F9D8BE2EC336E4009DA52A /* AdaptyPlugin */; };
+		42F9D8C12EC336E4009DA52A /* AdaptyUI in Frameworks */ = {isa = PBXBuildFile; productRef = 42F9D8C02EC336E4009DA52A /* AdaptyUI */; };
+		42F9D8C32EC336E4009DA52A /* AdaptyUITesting in Frameworks */ = {isa = PBXBuildFile; productRef = 42F9D8C22EC336E4009DA52A /* AdaptyUITesting */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		42F9D8A92EC33642009DA52A /* AdaptyIntegrationExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdaptyIntegrationExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +30,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42F9D8C12EC336E4009DA52A /* AdaptyUI in Frameworks */,
+				42F9D8BF2EC336E4009DA52A /* AdaptyPlugin in Frameworks */,
+				42F9D8C32EC336E4009DA52A /* AdaptyUITesting in Frameworks */,
+				42F9D8BD2EC336E4009DA52A /* Adapty in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +76,10 @@
 			);
 			name = AdaptyIntegrationExample;
 			packageProductDependencies = (
+				42F9D8BC2EC336E4009DA52A /* Adapty */,
+				42F9D8BE2EC336E4009DA52A /* AdaptyPlugin */,
+				42F9D8C02EC336E4009DA52A /* AdaptyUI */,
+				42F9D8C22EC336E4009DA52A /* AdaptyUITesting */,
 			);
 			productName = AdaptyIntegrationExample;
 			productReference = 42F9D8A92EC33642009DA52A /* AdaptyIntegrationExample.app */;
@@ -94,6 +109,9 @@
 			);
 			mainGroup = 42F9D8A02EC33642009DA52A;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				42F9D8BB2EC336E4009DA52A /* XCRemoteSwiftPackageReference "AdaptySDK-iOS" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 42F9D8AA2EC33642009DA52A /* Products */;
 			projectDirPath = "";
@@ -328,6 +346,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		42F9D8BB2EC336E4009DA52A /* XCRemoteSwiftPackageReference "AdaptySDK-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adaptyteam/AdaptySDK-iOS.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.12.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		42F9D8BC2EC336E4009DA52A /* Adapty */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42F9D8BB2EC336E4009DA52A /* XCRemoteSwiftPackageReference "AdaptySDK-iOS" */;
+			productName = Adapty;
+		};
+		42F9D8BE2EC336E4009DA52A /* AdaptyPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42F9D8BB2EC336E4009DA52A /* XCRemoteSwiftPackageReference "AdaptySDK-iOS" */;
+			productName = AdaptyPlugin;
+		};
+		42F9D8C02EC336E4009DA52A /* AdaptyUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42F9D8BB2EC336E4009DA52A /* XCRemoteSwiftPackageReference "AdaptySDK-iOS" */;
+			productName = AdaptyUI;
+		};
+		42F9D8C22EC336E4009DA52A /* AdaptyUITesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42F9D8BB2EC336E4009DA52A /* XCRemoteSwiftPackageReference "AdaptySDK-iOS" */;
+			productName = AdaptyUITesting;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 42F9D8A12EC33642009DA52A /* Project object */;
 }
