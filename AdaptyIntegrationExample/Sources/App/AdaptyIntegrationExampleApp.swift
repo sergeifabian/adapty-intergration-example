@@ -2,9 +2,13 @@ import SwiftUI
 
 @main
 struct AdaptyIntegrationExampleApp: App {
+  @State var adaptyIntegrationContentViewModel = AdaptyIntegrationContentViewModel()
+
   var body: some Scene {
     WindowGroup {
-      Text("Hello, Adapty!")
+      AdaptyIntegrationContentView(
+        viewModel: adaptyIntegrationContentViewModel
+      )
     }
   }
 }
